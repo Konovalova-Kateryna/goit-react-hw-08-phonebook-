@@ -24,17 +24,13 @@ const register = createAsyncThunk('auth/register', async credentials => {
 });
 
 const logIn = createAsyncThunk('auth/login', async credentials => {
-  const responce = null;
   try {
-    responce = await axios.post('/users/login', credentials);
+    const responce = await axios.post('/users/login', credentials);
     token.set(responce.data.token);
     console.log('Log IN', responce);
     return responce.data;
   } catch (error) {
-    console.log(responce.status);
-    // if (responce.status === 400) {
-    //   console.log('error!!!');
-    // }
+    console.log(error);
   }
 });
 
