@@ -1,8 +1,7 @@
-import { Form, Formik, Field } from 'formik';
+import { Formik } from 'formik';
 import { useDispatch } from 'react-redux';
 import authOperations from 'redux/auth/auth-operations';
 import {
-  ContactFormStyle,
   StyledForm,
   Input,
   Label,
