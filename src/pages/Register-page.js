@@ -45,14 +45,14 @@ const Register = () => {
             <Label>Email:</Label>
             <Input type="email" name="email" />
             <ErrorMessage name="email">
-              {() => Notiflix.Notify.failure('Name is required field')}
+              {() => Notiflix.Notify.failure('Email is required field')}
             </ErrorMessage>
           </FormItem>
           <FormItem>
             <Label>Password:</Label>
             <Input type="password" name="password" />
             <ErrorMessage name="password">
-              {() => Notiflix.Notify.failure('Name is required field')}
+              {() => Notiflix.Notify.failure('Password is required field')}
             </ErrorMessage>
           </FormItem>
           <ContactFormBtn type="submit">Register</ContactFormBtn>

@@ -2,7 +2,7 @@ import { lazy, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { GlobalStyle } from './GlobalStyle';
 import { Route, Routes } from 'react-router-dom';
-import { Layout } from './Layout/Layout';
+import Layout from './Layout/Layout';
 import authOperations from 'redux/auth/auth-operations';
 import { PrivateRoute } from './PrivateRoute';
 import authSelectors from 'redux/auth/auth-selectors';
@@ -32,7 +32,6 @@ const App = () => {
           {/* <Route index element={<HomePage />} /> */}
           <Route
             index
-            path="/register"
             element={
               <RestrictedRoute
                 redirectTo="/contacts"
