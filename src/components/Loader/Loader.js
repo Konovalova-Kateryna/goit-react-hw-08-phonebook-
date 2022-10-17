@@ -1,5 +1,4 @@
 import { Watch } from 'react-loader-spinner';
-import styled from 'styled-components';
 
 const Loader = () => {
   return (
